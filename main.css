@@ -1,4 +1,35 @@
 html, body {
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
   background-color: #2E4053;
-  color: white;
+  margin: 50px;
+  height: 500px;
+  font-size: 35px;
+}
+
+#header-container {
+  height: 200px;
+  text-align: left;
+  vertical-align: baseline;
+  position: relative;
+}
+
+#header-container > span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#links-container {
+  padding-top: 30px;
+}
+
+h1, h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+a {
+  color: #7CACDF;
+  margin-right: 2em;
 }
