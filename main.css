@@ -7,6 +7,10 @@ html, body {
   font-size: 35px;
 }
 
+.center {
+  text-align: center;
+}
+
 #header-container {
   height: 200px;
   text-align: left;
@@ -22,6 +26,11 @@ html, body {
 
 #links-container {
   padding-top: 30px;
+}
+
+#resume {
+  height: 800px;
+  width: 700px;
 }
 
 h1, h2 {
