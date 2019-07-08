@@ -82,8 +82,8 @@ a {
 
 .little-me {
   bottom: -3px;
-  animation: swim-oiko 5s linear alternate;
-  animation-iteration-count: 2;
+  animation: swim-oiko 6s linear alternate;
+  animation-iteration-count: infinite;
 }
 
 .little-me img {
