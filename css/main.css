@@ -80,6 +80,18 @@ a {
   animation-iteration-count: infinite;
 }
 
+.little-me {
+  bottom: -3px;
+  animation: swim-oiko 5s linear alternate;
+  animation-iteration-count: 2;
+}
+
+.little-me img {
+  left: 50%;
+  bottom: 0;
+  width: 50%
+}
+
 .footer {
   top: 95%;
   width: 100%;
@@ -111,4 +123,9 @@ a {
   30% { opacity:1; }
   50% { opacity:0; }
   100% {opacity:0; }
+}
+
+@keyframes swim-oiko {
+  0% { transform: translate(0,0) }
+  100% { transform: translate(180%,0)}
 }
