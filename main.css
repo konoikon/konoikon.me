@@ -51,7 +51,11 @@ hr {
   justify-content: space-around;
   top: 40%;
   width: 100%;
-  font-size: 5em;
+  /* font-size: 5em; */
+}
+
+i {
+  font-size: 7vmax;
 }
 
 a {
