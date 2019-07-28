@@ -86,6 +86,18 @@ a {
   animation-iteration-count: infinite;
 }
 
+@media screen and (max-width: 700px) {
+  .little-me {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .little-me {
+    width: 40vw;
+  }
+}
+
 .little-me {
   bottom: -3px;
   animation: swim-oiko 6s linear alternate;
@@ -93,9 +105,9 @@ a {
 }
 
 .little-me img {
-  left: 50%;
+  left: 10vw;
   bottom: 0;
-  width: 50%
+  width: 50%;
 }
 
 .footer img {
@@ -128,7 +140,7 @@ a {
 
 @keyframes swim-oiko {
   0% { transform: translate(0,0) }
-  100% { transform: translate(180%,0)}
+  100% { transform: translate(70vw,0)}
 }
 
 /* RESUME PAGE */
