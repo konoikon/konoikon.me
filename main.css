@@ -5,9 +5,10 @@ html {
 body {
   margin: 0px;
   overflow: hidden;
-  background-color: #F2D5C4;
-  color: #73655D;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background-color: #f2d5c4;
+  color: #73655d;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 div {
@@ -18,7 +19,7 @@ div {
 .sand {
   height: 100%;
   width: 100%;
-  background: #F2D5C4;
+  background: #f2d5c4;
 }
 
 .content {
@@ -41,7 +42,7 @@ hr {
   width: 75%;
   margin-bottom: 3vw;
   border: 0;
-  background-color: #544A44;
+  background-color: #544a44;
 }
 
 .social {
@@ -60,14 +61,14 @@ i {
 
 a {
   text-decoration: none;
-  color: #73655D;
+  color: #73655d;
 }
 
 .wet-sand {
   height: 20%;
   width: 100%;
   top: 65%;
-  background-color: #F4A97D;
+  background-color: #f4a97d;
   animation: wetsandanim ease-in-out 7s;
   animation-iteration-count: infinite;
 }
@@ -76,16 +77,27 @@ a {
   width: 100%;
   height: 100%;
   top: 75%;
-  background: linear-gradient(to top, #0785F2 0%, #50A7F2 50%, #5EBAF2 70%, #4AD9D9 90%);
+  background: linear-gradient(
+    to top,
+    #0785f2 0%,
+    #50a7f2 50%,
+    #5ebaf2 70%,
+    #4ad9d9 90%
+  );
   animation: waveanim ease-in-out 7s;
   animation-iteration-count: infinite;
   overflow: hidden;
 }
 
 .seafoam {
-  width:100%;
-  height:100%;
-  background: linear-gradient(to top, transparent 0%, transparent 92%, white 100%);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    transparent 0%,
+    transparent 92%,
+    white 100%
+  );
   animation: seafoamanim ease-in-out 7s;
   animation-iteration-count: infinite;
 }
@@ -122,29 +134,57 @@ a {
 }
 
 @keyframes waveanim {
-  0% {    transform:  scaleY(1.00) ;  }
-  35% {    transform:  scaleY(1.2) ;  }
-  69% {    transform:  scaleY(1.00) ;  }
-  100% {    transform:  scaleY(1.00) ;  }
+  0% {
+    transform: scaleY(1);
+  }
+  35% {
+    transform: scaleY(1.2);
+  }
+  69% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
 
 @keyframes wetsandanim {
-  0% {  opacity:0.2; }
-  34% { opacity:0.2; }
-  35% { opacity:0.7;}
-  100% {opacity:0.2; }
+  0% {
+    opacity: 0.2;
+  }
+  34% {
+    opacity: 0.2;
+  }
+  35% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.2;
+  }
 }
 
 @keyframes seafoamanim {
-  0% {  opacity:0; }
-  30% { opacity:1; }
-  50% { opacity:0; }
-  100% {opacity:0; }
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes swim-oiko {
-  0% { transform: translate(0,0) }
-  100% { transform: translate(70vw,0)}
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(70vw, 0);
+  }
 }
 
 /* RESUME PAGE */
