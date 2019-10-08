@@ -49,17 +49,18 @@ hr {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   top: 40%;
   width: 100%;
   /* font-size: 5em; */
 }
 
 i {
-  font-size: 7vmax;
+  font-size: 10vh;
 }
 
 a {
+  margin: 10px auto;
   text-decoration: none;
   color: #73655d;
 }
