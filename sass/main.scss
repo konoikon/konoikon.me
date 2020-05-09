@@ -1,0 +1,199 @@
+/* 
+   --------------------------------------
+   --------  BASE --------
+   --------------------------------------
+*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // defines what 1rem is
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/* 
+   --------------------------------------
+   --------  MIXINS --------
+   --------------------------------------
+*/
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+/* 
+   --------------------------------------
+   --------  VARIABLES --------
+   --------------------------------------
+*/
+
+// COLORS
+$color-dark: #111;
+
+$color-grey-light-1: #f7f7f7;
+
+$color-grey-dark: #777;
+$color-white: #fff;
+$color-black: #000;
+
+// FONT
+$default-font-size: 1.6rem;
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+/* 
+   --------------------------------------
+   --------  TYPOGRAPHY --------
+   --------------------------------------
+*/
+
+body {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: $color-grey-dark;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.long-copy {
+    
+}
+
+
+
+/* 
+   --------------------------------------
+   --------  GRID --------
+   --------------------------------------
+*/
+
+.row {
+    max-width: $grid-width;
+    margin: 0 auto;
+
+    @include clearfix;
+
+    [class^="col-"] {
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+    }
+
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+    }
+
+    .col-2-of-3 {
+        width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
+    }
+
+    .col-1-of-4 {
+        width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+    }
+
+    .col-2-of-4 {
+        width: calc(2 * ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal});
+    }
+
+    .col-3-of-4 {
+        width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
+    }
+}
+
+/* 
+   --------------------------------------
+   --------  COMPONENTS --------
+   --------------------------------------
+*/
+
+/* 
+   --------------------------------------
+   --------  ANIMATIONS --------
+   --------------------------------------
+*/
+
+/* 
+   --------------------------------------
+   --------  SECTIONS --------
+   --------------------------------------
+*/
+
+.header {
+    height: 100vh;
+    background-image: linear-gradient($color-dark, $color-dark);
+    background-size: cover;
+    clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
+    color: $color-white;
+    padding-top: 8rem;
+
+    &__title {
+        margin-bottom: 4rem;
+    }
+
+    &__text-box {
+        width: 50%;
+        margin-bottom: 6rem;
+    }
+
+    &__main-nav {
+        list-style: none;
+        width: 40%;
+        text-align: center;
+
+        &__item {
+            color: $color-white;
+            text-decoration: none;
+            font-size: 2.5rem;
+        }
+        
+    }
+}
+
+.header-2 {
+    height: 100vh;
+    margin-top: -100vh;
+    text-align: center;
+    overflow: hidden;
+
+    &__subtitle-box {
+        text-align: right;
+        padding-top: 10rem;
+    }
+
+    &__subtitle-text {
+        font-size: 3rem;
+    }
+    
+    &__hero-img {
+        width: 90rem;
+        margin-top: -18rem;
+        padding-left: 7rem;
+    }
+}
