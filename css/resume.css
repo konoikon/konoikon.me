@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.main-section {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/img/background.jpg");
+  background-size: cover;
+  position: relative;
+  padding: 10rem;
+}
+
+.title {
+  font-family: "Commissioner", sans-serif;
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+.subtitle {
+  font-family: "Commissioner", sans-serif;
+  font-size: 3rem;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+
+.content {
+  max-width: 80rem;
+  margin: 5rem auto 0 auto;
+}
+
+.resume {
+  width: 80rem;
+  height: 70rem;
+}
