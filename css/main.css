@@ -19,8 +19,6 @@ body {
 
 .main-section {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("/img/background.jpg");
   background-size: cover;
   position: relative;
 
@@ -65,16 +63,35 @@ body {
 a:link,
 a:visited {
   text-decoration: none;
-  color: white;
+  color: inherit;
   padding: 1rem 2rem;
   transition: all 0.4s;
 }
 
 a:hover {
-  background-color: #046380;
+  background-color: #333;
+  color: #efefef;
   box-shadow: 0 0.3rem 0.5rem black;
 }
 
 a:active {
   box-shadow: 0 0.1rem 0.4rem black;
+}
+
+@media (prefers-color-scheme: dark) {
+  .main-section {
+    background-color: #333;
+    color: #efefef;
+  }
+  a:hover {
+    background-color: #efefef;
+    color: #333;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .main-section {
+    background-color: #efefef;
+    color: #333;
+  }
 }
