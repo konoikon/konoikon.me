@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.main-section {
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+
+  padding: 10rem;
+}
+
+.title {
+  font-family: "Commissioner", sans-serif;
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+.subtitle {
+  font-family: "Commissioner", sans-serif;
+  font-size: 3rem;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100rem;
+}
+
+.long-copy {
+  line-height: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 8rem;
+  padding: 0 5rem;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem 2rem;
+  transition: all 0.4s;
+}
+
+a:hover {
+  background-color: #333;
+  color: #efefef;
+  box-shadow: 0 0.3rem 0.5rem black;
+}
+
+a:active {
+  box-shadow: 0 0.1rem 0.4rem black;
+}
+
+@media (prefers-color-scheme: dark) {
+  .main-section {
+    background-color: #333;
+    color: #efefef;
+  }
+  a:hover {
+    background-color: #efefef;
+    color: #333;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .main-section {
+    background-color: #efefef;
+    color: #333;
+  }
+}
